@@ -1,0 +1,157 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3f3f3;
+}
+
+button {
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #999;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+  color: #ddd;
+}
+
+button i {
+  margin-right: 0.4em;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 3em;
+  height: 120px;
+  width: 100%;
+}
+
+.menu h1 {
+  font-size: 1.9rem;
+  margin-right: 0.5em;
+}
+
+.note-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.note-area .note {
+  width: 240px;
+  background-color: #eded20;
+  margin: 1em 2em;
+  border: 1px solid black;
+  min-height: 230px;
+}
+
+.note-area .note__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.06);
+  width: 100%;
+  padding: 1em;
+}
+
+.note-area .note button.delate-note {
+  border: none;
+  font-size: 1.6em;
+  padding: 0;
+}
+
+.note-area .note button.delate-note i {
+  padding: 0.3em;
+}
+
+.note-area .note button:hover {
+  background-color: transparent;
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.note-area .note__body {
+  padding: 1em;
+  font-size: 1.2rem;
+}
+
+.note-panel {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid black;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  padding: 2em;
+  height: 400px;
+}
+
+.note-panel select {
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+.note-panel textarea {
+  max-width: 100%;
+  min-width: 50%;
+  max-height: 200px;
+  min-height: 100px;
+}
+
+.note-panel .error {
+  color: red;
+  visibility: hidden;
+}
+/*# sourceMappingURL=main.css.map */

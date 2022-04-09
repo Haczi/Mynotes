@@ -85,6 +85,7 @@ button {
 		&__body {
 			padding: 1em;
 			font-size: 1.2rem;
+			overflow-wrap: break-word;
 		}
 	}
 }
